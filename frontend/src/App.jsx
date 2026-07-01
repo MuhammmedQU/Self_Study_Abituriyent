@@ -9,30 +9,3 @@ export default function App() {
     </AuthProvider>
   );
 }
-      </Route>
-      <Route element={<StudentLayout />}>
-        <Route path="/" element={<HomePage />} />
-        <Route
-          path="/student/dashboard"
-          element={
-            <ProtectedRoute>
-              <DashboardPage />
-            </ProtectedRoute>
-          }
-        />
-      </Route>
-      <Route
-        path="/admin"
-        element={
-          <AdminRoute>
-            <AdminLayout />
-          </AdminRoute>
-        }
-      >
-        <Route index element={<AdminDashboard />} />
-      </Route>
-      <Route path="/403" element={<ForbiddenPage />} />
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
-  )
-}

@@ -6,7 +6,7 @@ echo "===== LMS Development Setup ====="
 
 # Check Python
 if ! command -v python3 &> /dev/null; then
-    echo "❌ Python 3 not found. Please install Python 3.11+"
+    echo "❌ Python 3 not found. Please install Python 3.12+"
     exit 1
 fi
 

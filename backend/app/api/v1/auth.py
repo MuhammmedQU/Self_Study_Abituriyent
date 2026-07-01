@@ -87,7 +87,7 @@ async def refresh(
 
 @router.post("/logout")
 async def logout(
-    credentials: HTTPAuthCredentials = Depends(security),
+    credentials = Depends(security),
     db: AsyncSession = Depends(get_db),
 ):
     """Logout user."""
